@@ -13,8 +13,9 @@ const quadrantStyle = {
 }
 
 const linSimStyle = {
+  border: '2px black',
   display: 'grid',
-  gridTemplate: '1fr 1fr / 1fr',
+  gridTemplate: '1fr 1fr / 1fr 1fr',
 }
 
 const linExpStyle = {
@@ -41,8 +42,10 @@ const FiguresInfoScoreOverviewPage = () => {
           <GridLabel>complex w/ demod (ACMN ICA)</GridLabel>
         </div>
         <div style={linSimStyle}>
-          <GridLabel>additive</GridLabel>
-          <GridLabel>multiplicative</GridLabel>
+          <GridLabel>pos</GridLabel>
+          <GridLabel>head-dir</GridLabel>
+          <GridLabel>pos + head-dir</GridLabel>
+          <GridLabel>pos * head-dir</GridLabel>
         </div>
         <GridLabel orientation="vertical">square</GridLabel>
         <div style={linExpStyle}>
@@ -51,8 +54,10 @@ const FiguresInfoScoreOverviewPage = () => {
           <GridLabel>complex w/ demod (ACMN ICA)</GridLabel>
         </div>
         <div style={linSimStyle}>
-          <GridLabel>additive</GridLabel>
-          <GridLabel>multiplicative</GridLabel>
+          <GridLabel>pos</GridLabel>
+          <GridLabel>head-dir</GridLabel>
+          <GridLabel>pos + head-dir</GridLabel>
+          <GridLabel>pos * head-dir</GridLabel>
         </div>
       </div>
     </FiguresLayout>
