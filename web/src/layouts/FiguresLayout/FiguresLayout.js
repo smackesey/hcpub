@@ -8,6 +8,7 @@ const rootStyle = {
 
 const figureRoutes = [
   { name: 'figuresInfoScoreOverview', label: 'Info Score Overview' },
+  { name: 'figuresImageTest', label: 'Image Test' },
 ]
 
 const FiguresLayout = ({ children }) => {
