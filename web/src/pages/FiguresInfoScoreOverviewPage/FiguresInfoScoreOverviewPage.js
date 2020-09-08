@@ -1,15 +1,11 @@
 import FiguresLayout from 'src/layouts/FiguresLayout/FiguresLayout'
-import HorizontalGridLabel from 'src/components/HorizontalGridLabel/HorizontalGridLabel'
 import GridLabel from 'src/components/GridLabel/GridLabel'
+import GridPlaceholder from 'src/components/GridPlaceholder/GridPlaceholder'
 
 const outerGridStyle = {
   height: '100%',
   display: 'grid',
   gridTemplate: '4% 48% 48% / 4% 48% 48%',
-}
-
-const quadrantStyle = {
-  backgroundColor: 'yellow',
 }
 
 const linSimStyle = {
@@ -42,10 +38,22 @@ const FiguresInfoScoreOverviewPage = () => {
           <GridLabel>complex w/ demod (ACMN ICA)</GridLabel>
         </div>
         <div style={linSimStyle}>
-          <GridLabel>pos</GridLabel>
-          <GridLabel>head-dir</GridLabel>
-          <GridLabel>pos + head-dir</GridLabel>
-          <GridLabel>pos * head-dir</GridLabel>
+          <div className="f-flex f-flex-col f-items-center">
+            <GridLabel>encoding: pos</GridLabel>
+            <img src="/images/lin-sim-enc-pos.png" />
+          </div>
+          <div className="f-flex f-flex-col f-items-center">
+            <GridLabel>encoding: hd</GridLabel>
+            <img src="/images/lin-sim-enc-hd.png" />
+          </div>
+          <div className="f-flex f-flex-col f-items-center">
+            <GridLabel>encoding: pos+hd</GridLabel>
+            <img src="/images/lin-sim-enc-pos+hd.png" />
+          </div>
+          <div className="f-flex f-flex-col f-items-center">
+            <GridLabel>encoding: pos*hd</GridLabel>
+            <img src="/images/lin-sim-enc-pos*hd.png" />
+          </div>
         </div>
         <GridLabel orientation="vertical">square</GridLabel>
         <div style={linExpStyle}>
