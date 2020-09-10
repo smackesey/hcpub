@@ -4,7 +4,7 @@ const FiguresImageTestPage = () => {
   return (
     <FiguresLayout>
       Here is an image:
-      <img src="/images/bokeh_tiled_square.png" />
+      <img className="f-rounded-lg" style={{borderRadius: '20px'}} src="/images/bokeh_tiled_square.png" />
     </FiguresLayout>
   )
 }

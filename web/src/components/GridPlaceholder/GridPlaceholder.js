@@ -1,11 +1,11 @@
-import GridLabel from 'src/components/GridLabel'
+import PlotCard from 'src/components/PlotCard'
+import { GRID_CELL_HEIGHT } from 'src/util'
 
-const GridPlaceholder = ({ children }) => {
+const GridPlaceholder = ({ heading }) => {
   return (
-    <div className="f-flex f-flex-col f-items-center">
-      <GridLabel>{children}</GridLabel>
-      <div className="f-bg-gray-500" style={{height: '300px'}} />
-    </div>
+    <PlotCard heading={heading}>
+      <div className="f-bg-gray-600 f-h-full" />
+    </PlotCard>
   )
 }
 
